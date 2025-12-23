@@ -1,0 +1,151 @@
+:root {
+    /* Violet Modern Theme - Light */
+    --radius: 0.65rem;
+
+    /* Base surfaces slightly tinted violet for warmth */
+    --background: oklch(0.98 0.01 293);
+    --foreground: oklch(0.16 0.02 293);
+
+    --card: oklch(0.99 0.005 293);
+    --card-foreground: oklch(0.19 0.025 293);
+
+    --popover: oklch(0.99 0.005 293);
+    --popover-foreground: oklch(0.16 0.02 293);
+
+    /* Primary: rich vivid violet */
+    --primary: oklch(0.58 0.3 292.5);
+    --primary-foreground: oklch(0.97 0.015 293);
+
+    /* Secondary: soft lavender */
+    --secondary: oklch(0.9 0.06 290);
+    --secondary-foreground: oklch(0.24 0.03 292.5);
+
+    /* Muted: desaturated lavender gray */
+    --muted: oklch(0.93 0.02 293);
+    --muted-foreground: oklch(0.52 0.02 293);
+
+    /* Accent: brighter electric violet */
+    --accent: oklch(0.65 0.26 295);
+    --accent-foreground: oklch(0.98 0.01 293);
+
+    /* Destructive: refined warm red (kept) */
+    --destructive: oklch(0.57 0.25 27.5);
+    --destructive-foreground: oklch(0.97 0.005 0);
+
+    /* Borders / inputs with subtle translucency */
+    --border: oklch(0.9 0.01 293);
+    --input: oklch(0.9 0.01 293);
+    --ring: oklch(0.7 0.24 292.5);
+
+    /* Data / chart ramp (harmonized) */
+    --chart-1: oklch(0.74 0.2 292.5);
+    --chart-2: oklch(0.62 0.28 293);
+    --chart-3: oklch(0.54 0.3 292.5);
+    --chart-4: oklch(0.46 0.28 292.5);
+    --chart-5: oklch(0.4 0.24 292.5);
+
+    /* Sidebar tokens */
+    --sidebar: oklch(0.985 0.008 293);
+    --sidebar-foreground: oklch(0.18 0.025 293);
+    --sidebar-primary: oklch(0.58 0.3 292.5);
+    --sidebar-primary-foreground: oklch(0.97 0.015 293);
+    --sidebar-accent: oklch(0.65 0.26 295);
+    --sidebar-accent-foreground: oklch(0.98 0.01 293);
+    --sidebar-border: oklch(0.9 0.01 293);
+    --sidebar-ring: oklch(0.7 0.24 292.5);
+
+    /* New modern extras */
+    --gradient-primary: linear-gradient(
+        135deg,
+        oklch(0.62 0.28 293) 0%,
+        oklch(0.54 0.3 292.5) 50%,
+        oklch(0.46 0.28 292.5) 100%
+    );
+    --gradient-accent: linear-gradient(
+        135deg,
+        oklch(0.7 0.26 295) 0%,
+        oklch(0.6 0.22 294) 100%
+    );
+    --shadow-sm: 0 1px 2px -1px oklch(0.4 0.05 293 / 0.25);
+    --shadow: 0 4px 12px -2px oklch(0.45 0.06 293 / 0.3),
+        0 2px 4px -1px oklch(0.45 0.06 293 / 0.25);
+    --shadow-lg: 0 8px 28px -6px oklch(0.45 0.06 293 / 0.35),
+        0 4px 12px -2px oklch(0.45 0.06 293 / 0.3);
+}
+
+.dark {
+    /* Violet Modern Theme - Dark */
+    --background: oklch(0.17 0.025 293);
+    --foreground: oklch(0.97 0.01 293);
+
+    --card: oklch(0.2 0.03 293);
+    --card-foreground: oklch(0.97 0.01 293);
+
+    --popover: oklch(0.2 0.03 293);
+    --popover-foreground: oklch(0.97 0.01 293);
+
+    --primary: oklch(0.62 0.28 293);
+    --primary-foreground: oklch(0.97 0.015 293);
+
+    --secondary: oklch(0.32 0.035 293);
+    --secondary-foreground: oklch(0.95 0.008 293);
+
+    --muted: oklch(0.27 0.02 293);
+    --muted-foreground: oklch(0.7 0.02 293);
+
+    --accent: oklch(0.65 0.26 295);
+    --accent-foreground: oklch(0.98 0.01 293);
+
+    --destructive: oklch(0.64 0.22 25);
+    --destructive-foreground: oklch(0.97 0.005 0);
+
+    --border: oklch(0.97 0.005 293 / 0.14);
+    --input: oklch(0.97 0.005 293 / 0.18);
+    --ring: oklch(0.7 0.24 292.5);
+
+    --chart-1: oklch(0.74 0.2 292.5);
+    --chart-2: oklch(0.62 0.28 293);
+    --chart-3: oklch(0.54 0.3 292.5);
+    --chart-4: oklch(0.46 0.28 292.5);
+    --chart-5: oklch(0.4 0.24 292.5);
+
+    --sidebar: oklch(0.2 0.03 293);
+    --sidebar-foreground: oklch(0.95 0.008 293);
+    --sidebar-primary: oklch(0.62 0.28 293);
+    --sidebar-primary-foreground: oklch(0.97 0.015 293);
+    --sidebar-accent: oklch(0.65 0.26 295);
+    --sidebar-accent-foreground: oklch(0.98 0.01 293);
+    --sidebar-border: oklch(0.97 0.005 293 / 0.14);
+    --sidebar-ring: oklch(0.7 0.24 292.5);
+
+    --gradient-primary: linear-gradient(
+        135deg,
+        oklch(0.54 0.3 292.5) 0%,
+        oklch(0.46 0.28 292.5) 50%,
+        oklch(0.38 0.22 292.5) 100%
+    );
+    --gradient-accent: linear-gradient(
+        135deg,
+        oklch(0.65 0.26 295) 0%,
+        oklch(0.55 0.22 294) 100%
+    );
+    --shadow-sm: 0 1px 2px -1px oklch(0.03 0.01 293 / 0.6);
+    --shadow: 0 4px 12px -2px oklch(0.03 0.015 293 / 0.55),
+        0 2px 4px -1px oklch(0.03 0.015 293 / 0.5);
+    --shadow-lg: 0 8px 28px -6px oklch(0.03 0.015 293 / 0.6),
+        0 4px 12px -2px oklch(0.03 0.015 293 / 0.55);
+}
+
+/* Optional utility usage examples
+.btn-primary {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    box-shadow: var(--shadow-sm);
+}
+.btn-primary:hover {
+    background: oklch(0.55 0.29 292.5);
+}
+.surface-gradient {
+    background: var(--gradient-primary);
+}
+*/

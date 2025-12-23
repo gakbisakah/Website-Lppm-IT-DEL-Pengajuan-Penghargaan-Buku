@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "jsx": "preserve",
+        "checkJs": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./resources/js/*"],
+            "@/components/*": ["./resources/js/components/*"],
+            "@/lib/*": ["./resources/js/lib/*"]
+        }
+    },
+    "include": ["resources/js/**/*"],
+    "exclude": ["node_modules", "dist", "build"]
+}
